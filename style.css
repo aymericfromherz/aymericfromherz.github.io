@@ -1,0 +1,14 @@
+a { text-decoration: none; color: #a00; }
+h1, h2, h3, h4, p { margin-top: 20px; }
+h3 { color:#333333; border-bottom:1px; solid #DDDDDD; padding:5px; text-align:center; font-size:25px; }
+ul, ol {margin-left: 10px; }
+li {margin-bottom: 8px;}
+body {
+  background: #DCDCDC;
+}
+div {
+  width:800px;
+  margin: auto;
+  text-align: justify;
+}
+
