@@ -1,6 +1,18 @@
-module Rev
+module List
 
 open FStar.List.Tot
+
+// TODO: Implement length, append, and prove lemma append_length
+val length: #a: Type -> list a -> nat
+let rec length (#a: Type) (l: list a) = admit()
+
+val append: #a: Type -> list a -> list a -> list a
+let rec append (#a: Type) (l1 l2: list a) = admit()
+
+val append_length (#a:Type) (l1 l2: list a) :
+  Lemma (length l1 + length l2 == length (append l1 l2))
+let rec append_length (#a: Type) (l1 l2: list a) = admit()
+
 
 let snoc l h = l @ [h]
 
