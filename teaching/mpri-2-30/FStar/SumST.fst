@@ -15,9 +15,9 @@ let rec sum_st' (r:ref nat) (n:nat)
                  sum_st' r (n - 1))
 
 
-let rec sum_st (n:nat)
+let sum_st (n:nat)
   : ST nat (requires (fun _ -> True))
-           (ensures  (fun h0 x h1 -> x == sum_tot n /\
+         (ensures  (fun h0 x h1 -> x == sum_tot n /\
                                      modifies !{} h0 h1))
 = let r = alloc 0 in
   sum_st' r n;
